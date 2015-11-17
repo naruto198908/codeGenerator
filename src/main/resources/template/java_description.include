@@ -1,0 +1,5 @@
+<#-- java类描述 -->
+ * 数据库表: ${table.sqlName}
+ * 表解释: ${table.tableAlias}
+ * @author generator
+ 

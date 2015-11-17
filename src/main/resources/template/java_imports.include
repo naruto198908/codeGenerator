@@ -1,0 +1,6 @@
+<#-- java导入包 -->
+import java.util.*;
+
+import ${basepackage}.model.*;
+import ${basepackage}.dao.*;
+import ${basepackage}.service.*;
