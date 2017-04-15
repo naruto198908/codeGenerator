@@ -1,7 +1,7 @@
 #!groovy
 node{
     stage 'scm'
-    git ''
+    git 'https://github.com/naruto198908/codeGenerator'
     echo 'clean'
     mvn clean --settings="/media/naruto/Stuty&Work/Program Green/apache-maven-3.3.9/conf/settings_ubuntu.xml"
     stage 'build'
