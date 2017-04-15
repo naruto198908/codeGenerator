@@ -1,10 +1,11 @@
 #!groovy
 node{
     stage 'scm'
-    echo 'hello scm'
+    git ''
+    echo 'clean'
+    mvn clean --settings="/media/naruto/Stuty&Work/Program Green/apache-maven-3.3.9/conf/settings_ubuntu.xml"
     stage 'build'
-    echo 'hello world1,PATH=${evn.PATH}'
-    input 'save artifacts and unit results?'
+    mvn package --settings="/media/naruto/Stuty&Work/Program Green/apache-maven-3.3.9/conf/settings_ubuntu.xml"
     stage 'deploy'
-    echo 'hello world2,job url=${JOB_URL}'
+    step([$class: ‘ArtifactArchiver’, artifacts: ‘**/target/*.jar’, fingerprint: true])
 }
