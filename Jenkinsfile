@@ -6,6 +6,6 @@ node{
     sh 'mvn clean --settings="/media/naruto/Stuty&Work/Program Green/apache-maven-3.3.9/conf/settings_ubuntu.xml"'
     stage 'build'
     sh 'mvn package --settings="/media/naruto/Stuty&Work/Program Green/apache-maven-3.3.9/conf/settings_ubuntu.xml"'
-    stage 'deploy'
-    
+    stage 'artifact archiver'
+    step([$class: ‘ArtifactArchiver’, artifacts: ‘**/target/*.jar’, fingerprint: true])
 }
