@@ -12,14 +12,14 @@
 			<artifactId>freemarker</artifactId>
 			<version>1.0</version>
 			<scope>system</scope>
-			<systemPath>${project.baseDir}/lib/freemarkder.jar</systemPath>
+			<systemPath>${project.basedir}/lib/freemarkder.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql</artifactId>
 			<version>1.0</version>
 			<scope>system</scope>
-			<systemPath>${project.baseDir}/lib/mysql-connector-java-5.0.5-bin.jar</systemPath>
+			<systemPath>${project.basedir}/lib/mysql-connector-java-5.0.5-bin.jar</systemPath>
 		</dependency>
 	</dependencies>
 </project>
