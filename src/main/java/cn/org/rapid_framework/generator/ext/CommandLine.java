@@ -3,7 +3,6 @@ package cn.org.rapid_framework.generator.ext;
 import java.io.File;
 import java.util.Scanner;
 
-import sun.io.Converters;
 
 import cn.org.rapid_framework.generator.GeneratorFacade;
 import cn.org.rapid_framework.generator.GeneratorProperties;
