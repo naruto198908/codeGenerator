@@ -12,7 +12,7 @@
 			<artifactId>freemarker</artifactId>
 			<version>1.0</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/freemarkder.jar</systemPath>
+			<systemPath>${project.basedir}/lib/freemarker.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>mysql</groupId>
